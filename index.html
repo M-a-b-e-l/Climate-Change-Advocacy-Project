@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CCN</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="pageIcon.jpg" type="image/jpg">
+</head>
+
+<body>
+  <div>
+  <!-------------------- Navigation Bar ------------------------->
+        <div class="navbar">
+          <ul>
+            <li><a class="slink link--nav" href=#six data-letters="Call to Action">Call to Action</a></li>
+            <li><a class="flink link--nav" href="#five">How to help</a></li>
+            <li><a class="flink link--nav" href="#four">Causes</a></li>
+            <li><a class="tlink link--nav" href="#three">Temperatures</a></li>
+            <li><a class="ttlink link--nav" href="#two">About</a></li>
+          </ul>
+        </div>
+  <!-------------------- Main Body ------------------------->
+
+    <!--------- First page ---------->
+    <div class="container">
+    <section class="one">
+      <div class="flex-title">
+        <h1>Current</h1>
+      </div>
+      <div class="flex-title">
+        <h1>Climate</h1>
+      </div>
+      <div class="flex-title">
+        <h1>News</h1>
+      </div>
+      <button id="topRightButton">Dark Mode</button>
+    </section>
+
+    <!--------- Second page ---------->
+    <section class="two" id="two">
+      <div class="revealable">
+        <!-- <h1 class="sec-title">About<br></h1> -->
+  
+        <p class="about-paragraph revealable" ><br>Climate change is a pressing issue worldwide that leaders and everyday citizens alike must come together to collaborate on. Across the globe, animal habitats are being destroyed or altered in ways that make it impossible for their previous inhabitants to live there. Moreover, minority communities are feeling the impact of climate change more than their majority counterparts.</p>
+        </div>
+    </section>
+
+    <!--------- Third page ---------->
+    <section class="three" id="three">
+      <div class="revealable">
+        <div class="temp-title"><h1>Temperatures<br></h1></div>
+        <div><p class="about-paragraph">The temperatures are rising and warming. Climate change is causing sea levels to rise and warming oceans to melt. Climate change is also causing extreme weather events to become more frequent and severe.</p></div>
+
+        <div class="temp-graphic"><img src="https://cdn.pixabay.com/animation/2023/08/23/15/46/15-46-31-162_512.gif" alt="Globa temperature rising because of CO2"></div>
+
+        <div><button><a href="https://climate.nasa.gov/vital-signs/global-temperature/">Learn More</a></button></div>
+
+        <div>
+          <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/?unit=us" data-label_1="NEW YORK" data-label_2="WEATHER" data-theme="beige" >NEW YORK WEATHER</a>
+          <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+          </script>
+        </div>
+
+        <div>
+          <a class="weatherwidget-io" href="https://forecast7.com/en/64d20n149d49/alaska/?unit=us" data-label_1="ALASKA" data-label_2="WEATHER" data-theme="beige" >ALASKA WEATHER</a>
+          <script>
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <!--------- Fourth page ---------->
+    <section class="four" id="four">
+      <div class="revealable">
+        <div class="sec-title"><h1>Causes</h1></div>
+          <div class="image-container">
+            <img id="img1" src="https://jpgreatcontent.co.uk/wp-content/uploads/2019/02/shutterstock_364137305.jpg">
+            <img id="img2" src="https://cdn.britannica.com/81/155881-050-38801D86/waste-beach-land-pollution-soil-water-health.jpg">
+          </div>
+      </div>
+      
+    </section>
+
+  <!--------- Fifth page ---------->
+  <section class="five" id="five">
+    <div class="revealable">
+      <h1 class="sec-title">How to help</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/mULqSzpk_d4?si=A4jJWjXpms5Ev_AK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <button><a href="https://www.unep.org/news-and-stories/story/10-ways-you-can-help-fight-climate-crisis">Learn More</a></button>
+    </div>
+  
+  </section>
+
+    <!--------- Sixth page ---------->
+    <section class="six" id="six">
+        <div class="petition revealable" id="petition">
+          
+          <h2 class="sec-title">Sign Our Petition 📢</h2><br>
+          <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p><br>
+          <div class="petition-container" id="petition-container">
+  
+            <div class="petition-para">
+              <h3>Sign this petition if you want big companies to use clean energy!!!</h3>
+            </div>
+            
+            <div id="signatures">
+              <p>🖊️ Maria from New York supports this</p>
+              <p>🖊️ John from California supports this</p>
+              <p>🖊️ Felix from Florida supports this</p>
+            </div>
+            
+          </div>
+            
+            <div class="form-container">
+              <form id="sign-petition" title="sign-petition">
+                <div class="form-input">
+                  <label for="Yourname">Name:</label>
+                  <input type="text" id="YourName">
+        
+                  <label for="State">State:</label>
+                  <input type="text" id="State">
+        
+                  <label for="Email">Email:</label>
+                  <input type="text" id='Email'>
+                </div>  
+              </form>
+              
+              <div class="form-submit">
+                <button type="submit" id="sign-now-button">Sign Now</button>
+              </div>
+            </div>
+        </div>
+          
+        </div>  
+
+        
+  </div>
+</div>
+
+  <!--------- Modal ---------->
+      <div id="thanks-modal" class="modal">
+        <div class="modal-content">
+          <div id="modal-text-container">
+            <!-- text here -->
+            <p id="thanks-modal-content">Thank you for signing our petition to save the Earth!</p>
+          </div>
+          <!-- image here -->
+          <img id="modal-image" src="ThankYouPic.jpg" alt="Thank you">
+
+        </div>
+
+      </div>
+  </section>
+
+  
+<script src="script.js"></script>
+</body>
+
+</html>
